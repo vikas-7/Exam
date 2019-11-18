@@ -79,7 +79,7 @@ MULTI	VMUL.F32 S10,S4,S1;Multiply radius with cos(x) to get X
 		BNE INCR
 		
 INCR	VADD.F32 S2,S2,S11
-        MOV R0,#16;Holding the Number of Terms in Series 'n'
+        MOV R0,#15;Holding the Number of Terms in Series 'n'
         VLDR.F32 S0,=0;Holding the sum of series elements 's'
         VLDR.F32 S1,=1;Temp Variable 'v' to hold the intermediate series elements 't'
 		VLDR.F32 S8,=1; Variable to hold the series
