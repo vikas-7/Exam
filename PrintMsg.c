@@ -4,7 +4,7 @@
 
 void printMsg(int a)
 {
-	 float a1=* ((float * ) &a);//ida oka mistake
+	 float a1=* ((float * ) &a);
 	 
 	 char Msg1[100];
 	 
