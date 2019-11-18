@@ -1,5 +1,11 @@
-	 area     Circle, CODE, READONLY
-     IMPORT printMsg
+;Below Program performs following things
+;1)calculates infinte Sine series for different values of theta stored in register S2
+;2)calculates infinte Cosine series for different values of theta stored in register S2
+;3) X=rcos(Q), Y=rsin(Q)in stored in register S10, S9 respectively
+;4) Value of radius is stored in register S4
+	
+	area     Circle, CODE, READONLY
+     	IMPORT printMsg
 	 EXPORT __main
      ENTRY 
 __main  FUNCTION
