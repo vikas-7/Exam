@@ -1,14 +1,21 @@
-#include "STM32F4xx.h"
+#include "stm32f4xx.h"
 #include <string.h>
 #include <stdio.h>
-void printMsg(const int a)
+
+void printMsg(int a)
 {
-	 char Msg[100];
+	 float a1=* ((float * ) &a);//ida oka mistake
+	 
+	 char Msg1[100];
+	 
 	 char *ptr;
-	 sprintf(Msg, "%f",(*(float*)&a));
-	 ptr = Msg ;
+	 sprintf(Msg1, "%f, \n", a1);
+	 
+	 ptr = Msg1 ;
    while(*ptr != '\0'){
       ITM_SendChar(*ptr);
       ++ptr;
+   
+	 }
+	 ITM_SendChar(',')	 ;
    }
-}
