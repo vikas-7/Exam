@@ -1,3 +1,4 @@
+
 #include "stm32f4xx.h"
 #include <string.h>
 #include <stdio.h>
@@ -17,5 +18,12 @@ void printMsg(int a)
       ++ptr;
    
 	 }
-	 ITM_SendChar(',')	 ;
+	 ITM_SendChar('\t')	 ;
    }
+
+	 
+void printMsg1(int a)
+{
+	 ITM_SendChar('\n')	 ;
+   }
+
