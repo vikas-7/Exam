@@ -6,7 +6,8 @@
 	
 	
 	area     Circle, CODE, READONLY
-     IMPORT printMsg
+     	IMPORT printMsg
+     	IMPORT printMsg1
 	 EXPORT __main
      ENTRY 
 __main  FUNCTION
