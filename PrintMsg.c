@@ -1,15 +1,15 @@
-
 #include "stm32f4xx.h"
 #include <string.h>
 #include <stdio.h>
 
 void printMsg(int a)
 {
+	 float a1=* ((float * ) &a);
 	 
 	 char Msg1[100];
 	 
 	 char *ptr;
-	 sprintf(Msg1, "%d, \n", a);
+	 sprintf(Msg1, "%f, \n", a1);
 	 
 	 ptr = Msg1 ;
    while(*ptr != '\0'){
@@ -17,6 +17,5 @@ void printMsg(int a)
       ++ptr;
    
 	 }
-	 ITM_SendChar('\t')	 ;
+	 ITM_SendChar(',')	 ;
    }
-
