@@ -5,12 +5,11 @@
 
 void printMsg(int a)
 {
-	 float a1=* ((float * ) &a);
 	 
 	 char Msg1[100];
 	 
 	 char *ptr;
-	 sprintf(Msg1, "%f, \n", a1);
+	 sprintf(Msg1, "%d, \n", a);
 	 
 	 ptr = Msg1 ;
    while(*ptr != '\0'){
@@ -19,11 +18,5 @@ void printMsg(int a)
    
 	 }
 	 ITM_SendChar('\t')	 ;
-   }
-
-	 
-void printMsg1(int a)
-{
-	 ITM_SendChar('\n')	 ;
    }
 
